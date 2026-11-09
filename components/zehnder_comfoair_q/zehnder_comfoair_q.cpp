@@ -148,7 +148,7 @@ namespace zehnder_comfoair_q
         // use_extended_id has already been set globally on parent
         if (remote_transmission_request)
             canbus_send_action.set_remote_transmission_request(true);
-        canbus_send_action.set_data_static(data.data(), data.size());
+        canbus_send_action.set_data_static(data);
         canbus_send_action.play();
     }
 }
